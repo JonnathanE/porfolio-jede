@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import tw from 'twin.macro';
 import { slide as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
@@ -62,11 +63,31 @@ const Topbar = () => {
 
     const navItems = (
         <NavItems>
-            <NavItem>Home</NavItem>
-            <NavItem>About</NavItem>
-            <NavItem>Skill</NavItem>
-            <NavItem>Portfolio</NavItem>
-            <NavItem>Contact</NavItem>
+            <NavItem>
+                <NavLink to='/' className={({ isActive }) => isActive ? 'text-bookmark-purple' : ''}>
+                    Home
+                </NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink to='/about' className={({ isActive }) => isActive ? 'text-bookmark-purple' : ''}>
+                    About
+                </NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink to='/skill' className={({ isActive }) => isActive ? 'text-bookmark-purple' : ''}>
+                    Skill
+                </NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink to='/porfolio' className={({ isActive }) => isActive ? 'text-bookmark-purple' : ''}>
+                    Portfolio
+                </NavLink>
+            </NavItem>
+            <NavItem>
+                <NavLink to='/contact' className={({ isActive }) => isActive ? 'text-bookmark-purple' : ''}>
+                    Contact
+                </NavLink>
+            </NavItem>
         </NavItems>
     )
 

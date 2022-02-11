@@ -1,12 +1,19 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./containers/intro/Intro";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Topbar />
-      <Intro />
-    </div>
+      <Routes>
+        <Route path="/" element={<Intro />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
