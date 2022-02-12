@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 import { init } from 'ityped';
 import styled, { keyframes } from 'styled-components';
@@ -20,6 +21,7 @@ const IntroSection = tw.div`
     lg:flex-row
     items-center
     overflow-hidden
+    dark:bg-bookmark-black
 `;
 
 const IntroLeft = tw.div`
@@ -63,6 +65,7 @@ const IntroHello = tw.h2`
     text-3xl
     lg:text-4xl
     text-bookmark-blue
+    dark:text-bookmark-white
 `;
 
 const IntroName = tw.h1`
@@ -70,12 +73,14 @@ const IntroName = tw.h1`
     text-4xl
     lg:text-6xl
     text-bookmark-blue
+    dark:text-bookmark-white
 `;
 
 const IntroJob = tw.h3`
     text-2xl
     lg:text-3xl
     text-bookmark-blue
+    dark:text-bookmark-white
 `;
 
 const IntroHab = styled.span`
@@ -96,6 +101,7 @@ const TopLink = styled.div`
         left-[40%]
         lg:left-[70%]
         text-bookmark-purple
+        dark:text-bookmark-white
     `}
 `;
 
@@ -126,9 +132,9 @@ const Intro = () => {
                     <IntroJob>Freelance <IntroHab ref={textRef}></IntroHab></IntroJob>
                 </IntroWrapper>
                 <TopLink>
-                    <a href="#about" className=''>
+                    <Link to='/about'>
                         <KeyboardArrowDown style={{ fontSize: "50px" }} />
-                    </a>
+                    </Link>
                 </TopLink>
             </IntroReight>
         </IntroSection>

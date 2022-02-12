@@ -2,6 +2,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -10,7 +11,9 @@ module.exports = {
         "bookmark-blue": "#242A45",
         "bookmark-grey": "#9194A2",
         "bookmark-white": "#f7f7f7",
-        "bookmark-orange": "#FD7014"
+        "bookmark-orange": "#FD7014",
+        "bookmark-black": "#222831",
+        "bookmark-gray": "#EEEEEE"
       },
     },
     fontFamily: {
