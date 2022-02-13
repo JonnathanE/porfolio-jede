@@ -14,6 +14,7 @@ const SkillSection = tw.div`
     dark:bg-bookmark-black
 `
 const SkillWrapp = tw.div`
+    mb-2.5
     flex
     flex-wrap
     justify-center
@@ -28,6 +29,7 @@ const SkillCard = tw.div`
     rounded-md
     overflow-hidden
     bg-white
+    text-bookmark-blue
     shadow-lg
     sm:shadow-xl
     flex

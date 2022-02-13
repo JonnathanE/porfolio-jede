@@ -41,6 +41,7 @@ const AboutButtonContainer = tw.div`
 const AboutCardTitle = tw.p`
     text-base
     sm:text-xl
+    text-bookmark-blue
     dark:text-bookmark-white
 `;
 
