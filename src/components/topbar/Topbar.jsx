@@ -12,7 +12,7 @@ fixed
 top-0
 z-50
 container
-bg-white
+bg-bookmark-white
 dark:bg-bookmark-black
 `;
 
@@ -89,17 +89,17 @@ const Topbar = () => {
                 </Link>
             </NavItem>
             <NavItem>
-                <Link to='skill'>
+                <Link to='skill' smooth={true} duration={1000}>
                     Skill
                 </Link>
             </NavItem>
             <NavItem>
-                <Link to='portfolio'>
+                <Link to='portfolio' smooth={true} duration={1000}>
                     Portfolio
                 </Link>
             </NavItem>
             <NavItem>
-                <Link to='contact'>
+                <Link to='contact' smooth={true} duration={1000}>
                     Contact
                 </Link>
             </NavItem>

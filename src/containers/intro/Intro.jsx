@@ -23,6 +23,7 @@ const IntroSection = tw.section`
     lg:flex-row
     items-center
     overflow-hidden
+    bg-bookmark-white
     dark:bg-bookmark-black
 `;
 
