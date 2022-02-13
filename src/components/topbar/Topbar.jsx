@@ -1,5 +1,6 @@
-import { NavLink } from 'react-router-dom';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import tw from 'twin.macro';
+import styled from 'styled-components';
 import { slide as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
 import { deviceSice } from '../../responsive';
@@ -12,7 +13,7 @@ fixed
 top-0
 z-50
 container
-//bg-bookmark-purple
+bg-white
 dark:bg-bookmark-black
 `;
 
@@ -31,6 +32,7 @@ text-3xl
 font-weight[700]
 text-bookmark-blue
 dark:text-bookmark-white
+cursor-pointer
 `;
 
 const TopbarRight = tw.div`
@@ -79,30 +81,28 @@ const Topbar = () => {
 
     const navItems = (
         <NavItems>
-            <NavItem>
-                <NavLink to='/' className={({ isActive }) => isActive ? 'text-bookmark-purple' : ''}>
-                    Home
-                </NavLink>
+            <NavItem onClick={() => scroll.scrollToTop()}>
+                Home
             </NavItem>
             <NavItem>
-                <NavLink to='/about' className={({ isActive }) => isActive ? 'text-bookmark-purple' : ''}>
+                <Link to='about' smooth={true} duration={1000}>
                     About
-                </NavLink>
+                </Link>
             </NavItem>
             <NavItem>
-                <NavLink to='/skill' className={({ isActive }) => isActive ? 'text-bookmark-purple' : ''}>
+                <Link to='skill'>
                     Skill
-                </NavLink>
+                </Link>
             </NavItem>
             <NavItem>
-                <NavLink to='/porfolio' className={({ isActive }) => isActive ? 'text-bookmark-purple' : ''}>
+                <Link to='portfolio'>
                     Portfolio
-                </NavLink>
+                </Link>
             </NavItem>
             <NavItem>
-                <NavLink to='/contact' className={({ isActive }) => isActive ? 'text-bookmark-purple' : ''}>
+                <Link to='contact'>
                     Contact
-                </NavLink>
+                </Link>
             </NavItem>
             <NavItemTheme onClick={() => setTheme(colorTheme)}>
                 {colorTheme === 'light'
@@ -117,7 +117,7 @@ const Topbar = () => {
         <TobarNav>
             <Wrapper>
                 <TopbarLeft>
-                    <Logo>JEDE</Logo>
+                    <Logo onClick={() => scroll.scrollToTop()}>JEDE</Logo>
                 </TopbarLeft>
                 <TopbarRight>
                     {isMobile && <Menu right styles={styles} burgerButtonClassName='dark:bg-white dark:text-bookmark-white'>{navItems}</Menu>}

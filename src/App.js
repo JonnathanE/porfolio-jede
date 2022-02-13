@@ -1,24 +1,27 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import tw from 'twin.macro';
+import styled from 'styled-components';
 import Topbar from "./components/topbar/Topbar";
+import About from "./containers/about/About";
 import Intro from "./containers/intro/Intro";
 import useDarkMode from "./hook/useDarkMode";
+
+const AppContainer = styled.div`
+height: 100vh;
+`;
+
+const AppSections = tw.div`
+
+`;
 
 function App() {
   useDarkMode();
   return (
-    <div className="dark:bg-bookmark-black transition duration-500">
-      <BrowserRouter>
-        <Topbar />
-
-        <Routes>
-          <Route path="/" element={<Intro />} />
-        </Routes>
-
-      </BrowserRouter>
+    <div>
+      <Topbar />
+      <AppSections>
+        <Intro />
+        <About />
+      </AppSections>
     </div>
   );
 }

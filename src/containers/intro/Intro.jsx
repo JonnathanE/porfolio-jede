@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import tw from 'twin.macro';
 import { init } from 'ityped';
 import styled, { keyframes } from 'styled-components';
@@ -13,9 +13,10 @@ const breatheAnimation = keyframes`
 const breatheAnimationArrow = keyframes`
     100% { opacity: 0; }
 `
-const IntroSection = tw.div`
-    mt-20
+const IntroSection = tw.section`
+    top-20 
     h-[calc(100vh - 80px)]
+    relative
     flex
     flex-col
     lg:flex-row
@@ -102,6 +103,7 @@ const TopLink = styled.div`
         lg:left-[70%]
         text-bookmark-purple
         dark:text-bookmark-white
+        cursor-pointer
     `}
 `;
 
@@ -119,7 +121,7 @@ const Intro = () => {
     }, []);
 
     return (
-        <IntroSection>
+        <IntroSection id='home'>
             <IntroLeft>
                 <IntroImgContainer>
                     <IntroImg src='https://jede-portfolio.web.app/assets/perfil_intro_circle.png' alt='profile' />
@@ -132,7 +134,7 @@ const Intro = () => {
                     <IntroJob>Freelance <IntroHab ref={textRef}></IntroHab></IntroJob>
                 </IntroWrapper>
                 <TopLink>
-                    <Link to='/about'>
+                    <Link to='about' smooth={true} duration={1000}>
                         <KeyboardArrowDown style={{ fontSize: "50px" }} />
                     </Link>
                 </TopLink>
