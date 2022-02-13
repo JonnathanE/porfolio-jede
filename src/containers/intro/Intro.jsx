@@ -4,6 +4,7 @@ import tw from 'twin.macro';
 import { init } from 'ityped';
 import styled, { keyframes } from 'styled-components';
 import { KeyboardArrowDown } from '@material-ui/icons';
+import PERFIL from '../../img/perfil_intro_circle.png';
 
 const breatheAnimation = keyframes`
     50% { opacity: 1; }
@@ -124,7 +125,7 @@ const Intro = () => {
         <IntroSection id='home'>
             <IntroLeft>
                 <IntroImgContainer>
-                    <IntroImg src='https://jede-portfolio.web.app/assets/perfil_intro_circle.png' alt='profile' />
+                    <IntroImg src={PERFIL} alt='profile' />
                 </IntroImgContainer>
             </IntroLeft>
             <IntroReight>

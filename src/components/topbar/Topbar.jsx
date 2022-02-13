@@ -1,6 +1,5 @@
 import { Link, animateScroll as scroll } from 'react-scroll';
 import tw from 'twin.macro';
-import styled from 'styled-components';
 import { slide as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
 import { deviceSice } from '../../responsive';
