@@ -4,6 +4,7 @@ import { skills } from '../../data';
 
 const SkillSection = tw.div`
     top-20
+    mb-16
     //h-[calc(100vh - 80px)]
     relative
     flex
@@ -13,7 +14,8 @@ const SkillSection = tw.div`
     dark:bg-bookmark-black
 `
 const SkillWrapp = tw.div`
-    mb-2.5
+    sm:pl-6
+    sm:pr-6
     flex
     flex-wrap
     justify-center

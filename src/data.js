@@ -41,3 +41,70 @@ export const skills = [
         name: 'Git',
     }
 ]
+
+export const portfolio = [
+    {
+        id: 1,
+        title: 'Teach LSEC App',
+        category: 'webapp',
+        img: 'http://woobsing.com/wp-content/uploads/2016/08/ecom.png',
+        web: 'https://learn-lsec.herokuapp.com/',
+        github: 'https://github.com/JonnathanE/microlearning-LSEC',
+        technology: [
+            {
+                id: 101,
+                name: 'React',
+                icon: 'assets/icons8-reaccionar.svg'
+            },
+            {
+                id: 102,
+                name: 'Node.js',
+                icon: 'assets/icons8-nodejs.svg'
+            },
+            {
+                id: 103,
+                name: 'Mongodb',
+                icon: 'assets/icons8-mongodb.svg'
+            },
+            {
+                id: 104,
+                name: 'Bootstrap',
+                icon: 'assets/icons8-oreja.svg'
+            }
+        ]
+    },
+    {
+        id: 2,
+        title: 'E-commerce web Design',
+        category: 'webdesign',
+        img: 'https://www.rootsolutions.com.ar/wp-contentitos/uploads/ecommerce.jpg',
+        github: 'https://github.com/JonnathanE/ecommerce-shopping',
+        technology: [
+            {
+                id: 201,
+                name: 'React',
+                icon: 'assets/icons8-reaccionar.svg'
+            },
+            {
+                id: 202,
+                name: 'Node.js',
+                icon: 'assets/icons8-nodejs.svg'
+            },
+            {
+                id: 203,
+                name: 'Mongodb',
+                icon: 'assets/icons8-mongodb.svg'
+            },
+            {
+                id: 204,
+                name: 'Styled Component',
+                icon: 'assets/icons8-css3.svg'
+            },
+            {
+                id: 205,
+                name: 'CSS',
+                icon: 'assets/icons8-css3.svg'
+            }
+        ]
+    }
+]
