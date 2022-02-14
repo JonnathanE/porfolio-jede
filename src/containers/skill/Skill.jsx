@@ -3,7 +3,6 @@ import TitleSection from '../../atom/titleSection/TitleSection';
 import { skills } from '../../data';
 
 const SkillSection = tw.div`
-    container
     top-20
     //h-[calc(100vh - 80px)]
     relative

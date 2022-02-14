@@ -1,9 +1,8 @@
 import tw from 'twin.macro';
 
-const FooterSection = tw.section`
+const FooterSection = tw.div`
     top-20
     relative
-    container
     bg-bookmark-white
     dark:bg-bookmark-black
     flex

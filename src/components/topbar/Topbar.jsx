@@ -8,69 +8,63 @@ import styles from './menuStyles';
 import useDarkMode from '../../hook/useDarkMode';
 
 const TobarNav = tw.nav`
-fixed
-top-0
-z-50
-container
-bg-bookmark-white
-dark:bg-bookmark-black
+    w-full
+    h-20
+    top-0
+    fixed
+    z-50
+    pl-6
+    pr-6
+    pt-4
+    md:pt-0
+    flex
+    items-center
+    self-center
+    justify-between
+    bg-bookmark-white
+    dark:bg-bookmark-black
 `;
-
-const Wrapper = tw.div`
-p-4
-flex
-items-center
-justify-between
-dark:bg-bookmark-black
-`;
-
-const TopbarLeft = tw.div``;
 
 const Logo = tw.div`
-text-3xl
-font-weight[700]
-text-bookmark-blue
-dark:text-bookmark-white
-cursor-pointer
-`;
-
-const TopbarRight = tw.div`
-flex
-items-center
+    text-3xl
+    font-weight[700]
+    text-bookmark-blue
+    dark:text-bookmark-white
+    dark:hover:text-bookmark-purple
+    cursor-pointer
 `;
 
 const NavItems = tw.ul`
-list-none
-sm:flex
-flex-1
-items-center
-gap-11
-text-white
-sm:text-bookmark-blue
-sm:dark:text-bookmark-white
-uppercase
-text-lg
-sm:text-xs
-font-medium
-sm:font-normal
+    list-none
+    w-full
+    h-auto
+    sm:w-auto
+    sm:h-full
+    flex
+    justify-center
+    items-center
 `;
 
 const NavItem = tw.li`
-cursor-pointer
-p-3.5
-transition-colors
-transition-duration[300ms]
-hover:text-bookmark-purple
-`;
-
-const NavItemTheme = tw.li`
-cursor-pointer
-p-3.5
-transition-colors
-border-l-2
-dark:border-l-bookmark-grey
-transition-duration[300ms]
-hover:text-bookmark-purple
+    flex
+    items-center
+    justify-center
+    min-h-full
+    font-bold
+    text-2xl
+    sm:text-sm
+    text-white
+    sm:text-bookmark-blue
+    sm:dark:text-white
+    cursor-pointer
+    transition-colors
+    transition-duration[300ms]
+    hover:text-bookmark-purple
+    dark:hover:text-bookmark-purple
+    box-content
+    mb-2
+    sm:mb-0
+    sm:mr-8
 `;
 
 const Topbar = () => {
@@ -103,26 +97,26 @@ const Topbar = () => {
                     Contact
                 </Link>
             </NavItem>
-            <NavItemTheme onClick={() => setTheme(colorTheme)}>
+            <NavItem onClick={() => setTheme(colorTheme)}>
                 {colorTheme === 'light'
                     ? <MdLightMode className='text-2xl' />
                     : <MdDarkMode className='text-2xl' />
                 }
-            </NavItemTheme>
+            </NavItem>
         </NavItems>
     )
 
     return (
         <TobarNav>
-            <Wrapper>
-                <TopbarLeft>
-                    <Logo onClick={() => scroll.scrollToTop()}>JEDE</Logo>
-                </TopbarLeft>
-                <TopbarRight>
-                    {isMobile && <Menu right styles={styles} burgerButtonClassName='dark:bg-white dark:text-bookmark-white'>{navItems}</Menu>}
-                    {!isMobile && navItems}
-                </TopbarRight>
-            </Wrapper>
+            <Logo onClick={() => scroll.scrollToTop()}>JEDE</Logo>
+
+            {
+                isMobile && <Menu right styles={styles} burgerButtonClassName='dark:bg-white'>
+                    {navItems}
+                </Menu>
+            }
+
+            {!isMobile && navItems}
         </TobarNav>
     )
 }
