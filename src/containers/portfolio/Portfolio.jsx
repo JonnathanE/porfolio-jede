@@ -122,6 +122,7 @@ const Portfolio = () => {
                 }))
                 break;
             default:
+                setData([])
                 setData(portfolio)
                 break;
         }

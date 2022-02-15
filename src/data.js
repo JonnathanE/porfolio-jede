@@ -47,7 +47,7 @@ export const portfolio = [
         id: 1,
         title: 'Teach LSEC App',
         category: 'webapp',
-        img: 'http://woobsing.com/wp-content/uploads/2016/08/ecom.png',
+        img: 'assets/portfolio/LSEC_App.png',
         web: 'https://learn-lsec.herokuapp.com/',
         github: 'https://github.com/JonnathanE/microlearning-LSEC',
         technology: [
@@ -76,8 +76,8 @@ export const portfolio = [
     {
         id: 2,
         title: 'E-commerce web Design',
-        category: 'webdesign',
-        img: 'https://www.rootsolutions.com.ar/wp-contentitos/uploads/ecommerce.jpg',
+        category: 'webapp',
+        img: 'assets/portfolio/ecommerce.png',
         github: 'https://github.com/JonnathanE/ecommerce-shopping',
         technology: [
             {
@@ -103,6 +103,71 @@ export const portfolio = [
             {
                 id: 205,
                 name: 'CSS',
+                icon: 'assets/icons8-css3.svg'
+            }
+        ]
+    },
+    {
+        id: 3,
+        title: 'Bookmark web Design',
+        category: 'webdesign',
+        web: 'https://jonnathane.github.io/bookmark-manager-web-page/',
+        img: 'assets/portfolio/bookmark.png',
+        github: 'https://github.com/JonnathanE/bookmark-manager-web-page',
+        technology: [
+            {
+                id: 301,
+                name: 'React',
+                icon: 'assets/icons8-reaccionar.svg'
+            },
+            {
+                id: 305,
+                name: 'Tailwind',
+                icon: 'assets/icons8-css3.svg'
+            }
+        ]
+    },
+    {
+        id: 4,
+        title: 'Admin Dashboard Design',
+        category: 'webdesign',
+        web: 'https://jonnathane.github.io/admin-dashboard-react/',
+        img: 'https://user-images.githubusercontent.com/33469147/152615233-269f8289-9633-43be-afd9-0148fa4349d2.png',
+        github: 'https://github.com/JonnathanE/admin-dashboard-react',
+        technology: [
+            {
+                id: 401,
+                name: 'React',
+                icon: 'assets/icons8-reaccionar.svg'
+            },
+            {
+                id: 405,
+                name: 'CSS',
+                icon: 'assets/icons8-css3.svg'
+            }
+        ]
+    },
+    {
+        id: 5,
+        title: 'Travel Agency Design',
+        category: 'webdesign',
+        web: 'https://jonnathane.github.io/travel-agency-website/',
+        img: 'https://user-images.githubusercontent.com/33469147/154123520-d6aea1f0-84b3-47f8-85fb-c78e1e58a91f.png',
+        github: 'https://github.com/JonnathanE/travel-agency-website',
+        technology: [
+            {
+                id: 501,
+                name: 'React',
+                icon: 'assets/icons8-reaccionar.svg'
+            },
+            {
+                id: 505,
+                name: 'Tailwind',
+                icon: 'assets/icons8-css3.svg'
+            },
+            {
+                id: 503,
+                name: 'Styled Components',
                 icon: 'assets/icons8-css3.svg'
             }
         ]
