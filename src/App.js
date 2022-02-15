@@ -2,6 +2,7 @@ import tw from 'twin.macro';
 import Footer from './components/footer/Footer';
 import Topbar from "./components/topbar/Topbar";
 import About from "./containers/about/About";
+import Contact from './containers/contact/Contact';
 import Intro from "./containers/intro/Intro";
 import Portfolio from './containers/portfolio/Portfolio';
 import Skill from './containers/skill/Skill';
@@ -22,6 +23,7 @@ function App() {
         <About />
         <Skill />
         <Portfolio />
+        <Contact />
       </AppSections>
       <Footer />
     </div>

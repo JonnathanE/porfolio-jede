@@ -58,6 +58,7 @@ const PortfolioInfo = tw.div`
 `;
 
 const PortfolioTitle = tw.p`
+text-bookmark-blue
     text-center
     font-bold
     text-lg
@@ -78,12 +79,16 @@ const PortfolioEtiqueta = tw.span`
 
 const Portfolio = () => {
 
-    const [selected, setSelected] = useState('Webapp')
+    const [selected, setSelected] = useState('all')
     const [data, setData] = useState([])
 
     const list = [
         {
-            id: 'Webapp',
+            id: 'all',
+            title: 'All Projects'
+        },
+        {
+            id: 'webapp',
             title: 'Web App'
         },
         {
@@ -98,6 +103,9 @@ const Portfolio = () => {
 
     useEffect(() => {
         switch (selected) {
+            case 'all':
+                setData(portfolio)
+                break;
             case 'webapp':
                 setData(portfolio.filter(item => {
                     return item.category === 'webapp'
@@ -114,9 +122,7 @@ const Portfolio = () => {
                 }))
                 break;
             default:
-                setData(portfolio.filter(item => {
-                    return item.category === 'webapp'
-                }))
+                setData(portfolio)
                 break;
         }
     }, [selected]);
