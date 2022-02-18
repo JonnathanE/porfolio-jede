@@ -171,5 +171,25 @@ export const portfolio = [
                 icon: 'assets/icons8-css3.svg'
             }
         ]
+    },
+    {
+        id: 6,
+        title: 'Discord Design',
+        category: 'webdesign',
+        web: '',
+        img: 'https://user-images.githubusercontent.com/33469147/154764808-c079ca76-df76-41c2-b5ec-9a39b5d6f86a.png',
+        github: 'https://github.com/JonnathanE/discord-design',
+        technology: [
+            {
+                id: 601,
+                name: 'React',
+                icon: 'assets/icons8-reaccionar.svg'
+            },
+            {
+                id: 602,
+                name: 'Tailwind',
+                icon: 'assets/icons8-css3.svg'
+            }
+        ]
     }
 ]
