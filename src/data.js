@@ -2,41 +2,51 @@
 export const skills = [
     {
         id: 1,
-        img: 'assets/icons8-javascript.svg',
-        name: 'JavaScript'
-    },
-    {
-        id: 2,
-        img: 'assets/icons8-html-5.svg',
-        name: 'HTML'
-    },
-    {
-        id: 3,
-        img: 'assets/icons8-css3.svg',
-        name: 'CSS'
-    },
-    {
-        id: 4,
         img: 'assets/icons8-reaccionar.svg',
         name: 'React'
     },
     {
-        id: 5,
+        id: 2,
         img: 'assets/icons8-nodejs.svg',
         name: 'Node js'
     },
     {
+        id: 3,
+        img: 'assets/icons8-javascript.svg',
+        name: 'JavaScript'
+    },
+    {
+        id: 4,
+        img: 'assets/icons8-html-5.svg',
+        name: 'HTML'
+    },
+    {
+        id: 5,
+        img: 'assets/icons8-css3.svg',
+        name: 'CSS'
+    },
+    {
         id: 6,
+        img: 'assets/Tailwind_CSS_Logo.png',
+        name: 'Tailwind CSS',
+    },
+    {
+        id: 7,
+        img: 'assets/icons8-bootstrap.svg',
+        name: 'Bootstrap',
+    },
+    {
+        id: 8,
         img: 'assets/icons8-mongodb.svg',
         name: 'MongoDB'
     },
     {
-        id: 7,
+        id: 9,
         img: 'assets/icons8-logo-de-mysql.svg',
         name: 'MySQL'
     },
     {
-        id: 8,
+        id: 10,
         img: 'assets/icons8-git.svg',
         name: 'Git',
     }
@@ -44,7 +54,7 @@ export const skills = [
 
 export const portfolio = [
     {
-        id: 1,
+        id: 1000,
         title: 'Teach LSEC App',
         category: 'webapp',
         img: 'assets/portfolio/LSEC_App.png',
@@ -74,7 +84,27 @@ export const portfolio = [
         ]
     },
     {
-        id: 2,
+        id: 1001,
+        title: 'Rick and Morty Wiki',
+        category: 'webapp',
+        img: 'https://user-images.githubusercontent.com/33469147/156499048-d1642bde-6fc3-418f-81b0-84a2a411d15b.png',
+        web: 'https://ryck-and-morty-wiki.web.app/',
+        github: 'https://github.com/JonnathanE/rick-morty-wiki',
+        technology: [
+            {
+                id: 701,
+                name: 'React',
+                icon: 'assets/icons8-reaccionar.svg'
+            },
+            {
+                id: 702,
+                name: 'Tailwind',
+                icon: 'assets/icons8-nodejs.svg'
+            }
+        ]
+    },
+    {
+        id: 1002,
         title: 'E-commerce web Design',
         category: 'webapp',
         img: 'assets/portfolio/ecommerce.png',
@@ -108,7 +138,7 @@ export const portfolio = [
         ]
     },
     {
-        id: 3,
+        id: 2000,
         title: 'Bookmark web Design',
         category: 'webdesign',
         web: 'https://jonnathane.github.io/bookmark-manager-web-page/',
@@ -128,7 +158,7 @@ export const portfolio = [
         ]
     },
     {
-        id: 4,
+        id: 2001,
         title: 'Admin Dashboard Design',
         category: 'webdesign',
         web: 'https://jonnathane.github.io/admin-dashboard-react/',
@@ -148,7 +178,7 @@ export const portfolio = [
         ]
     },
     {
-        id: 5,
+        id: 2002,
         title: 'Travel Agency Design',
         category: 'webdesign',
         web: 'https://jonnathane.github.io/travel-agency-website/',
@@ -173,7 +203,7 @@ export const portfolio = [
         ]
     },
     {
-        id: 6,
+        id: 2003,
         title: 'Discord Design',
         category: 'webdesign',
         web: '',
@@ -188,6 +218,31 @@ export const portfolio = [
             {
                 id: 602,
                 name: 'Tailwind',
+                icon: 'assets/icons8-css3.svg'
+            }
+        ]
+    },
+    {
+        id: 2004,
+        title: 'Portfolio Design',
+        category: 'webdesign',
+        web: 'https://jede-portfolio.web.app/',
+        img: 'https://user-images.githubusercontent.com/33469147/156506330-51bfd13e-3d0c-49f7-a4e4-5248b683a83b.png',
+        github: 'https://github.com/JonnathanE/porfolio-jede',
+        technology: [
+            {
+                id: 801,
+                name: 'React',
+                icon: 'assets/icons8-reaccionar.svg'
+            },
+            {
+                id: 802,
+                name: 'Tailwind',
+                icon: 'assets/icons8-css3.svg'
+            },
+            {
+                id: 803,
+                name: 'Styled Components',
                 icon: 'assets/icons8-css3.svg'
             }
         ]

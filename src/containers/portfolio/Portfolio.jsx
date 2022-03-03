@@ -49,7 +49,7 @@ const PortfolioItem = tw.div`
 const PorftolioImg = tw.img`
     w-full
     h-60
-    object-cover
+    // object-cover
 `;
 
 const PortfolioInfo = tw.div`
