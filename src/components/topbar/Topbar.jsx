@@ -93,6 +93,11 @@ const Topbar = () => {
                 </Link>
             </NavItem>
             <NavItem>
+                <Link to='certification' smooth={true} duration={1000}>
+                    Certification
+                </Link>
+            </NavItem>
+            <NavItem>
                 <Link to='contact' smooth={true} duration={1000}>
                     Contact
                 </Link>

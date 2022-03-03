@@ -52,6 +52,36 @@ export const skills = [
     }
 ]
 
+export const certifications = [
+    {
+        id: 3,
+        name: "[2021] Scrum Master Certificación",
+        business: "Udemy",
+        expedition: 'dic. 2021',
+        expiration: null,
+        idCertification: 'UC-ba9da92b-d143-4fc4-ae65-df7ce3587a42',
+        url: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-ba9da92b-d143-4fc4-ae65-df7ce3587a42.pdf',
+    },
+    {
+        id: 2,
+        name: 'Universidad CSS 2021 - Aprende CSS desde Cero hasta Experto!',
+        business: "Udemy",
+        expedition: 'dic. 2021',
+        expiration: null,
+        idCertification: 'UC-f5512190-afed-4310-a6f0-7e14d48f12d7',
+        url: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-f5512190-afed-4310-a6f0-7e14d48f12d7.pdf',
+    },
+    {
+        id: 1,
+        name: 'HTML 5 desde cero Edición 2020',
+        business: "Udemy",
+        expedition: 'abr. 2021',
+        expiration: null,
+        idCertification: 'UC-d6986cd6-765d-486c-89ac-cb561a9953e7',
+        url: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-d6986cd6-765d-486c-89ac-cb561a9953e7.pdf',
+    }
+]
+
 export const portfolio = [
     {
         id: 1000,
