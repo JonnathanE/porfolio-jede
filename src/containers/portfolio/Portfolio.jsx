@@ -134,7 +134,7 @@ const Portfolio = () => {
                 <TitleSection>Porfolio</TitleSection>
                 <List>
                     {list.map(item => (
-                        <PortfolioList id={item.id} title={item.title} active={selected === item.id} setSelected={setSelected} key={item.id} />
+                        <PortfolioList id={item.id} title={item.title} active={selected === item.id} setSelected={setSelected} total={data.length} key={item.id} />
                     ))}
                 </List>
                 <PortfolioWrapper>
