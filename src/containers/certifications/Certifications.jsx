@@ -5,7 +5,7 @@ import tw, { styled } from 'twin.macro'
 import { certifications } from '../../data';
 
 const Contianer = tw.div`
-relative top-20 pb-20 mb-16 p-2 flex flex-col items-center bg-bookmark-white dark:bg-bookmark-black
+relative top-20 pb-20 mb-16 p-2 flex flex-col items-center bg-bookmark-white dark:bg-gray-800
 `;
 
 const Wrapp = tw.div`
@@ -13,7 +13,7 @@ sm:pl-6 sm:pr-6 mt-6
 `;
 
 const List = tw.ul`
-bg-white rounded-lg shadow-md p-6
+bg-white dark:bg-gray-800 rounded-lg shadow-md p-6
 `;
 
 const ListItem = styled.li`
@@ -22,15 +22,15 @@ ${({ hasBorder }) => hasBorder && tw`border-b-2`}
 `;
 
 const Title = tw.span`
-font-semibold text-base
+font-semibold text-base text-bookmark-blue dark:text-white
 `;
 
 const SubTitle = tw.span`
-text-gray-700 text-sm
+text-gray-700 dark:text-gray-400 text-sm
 `;
 
 const BtnLink = tw.a`
-py-2 px-4 rounded-full transition duration-300 border-2 border-gray-500 text-gray-500 font-semibold hover:bg-gray-200
+py-2 px-4 rounded-full transition duration-300 border-2 border-gray-600 dark:border-gray-400 text-gray-600 dark:text-gray-400 font-semibold hover:bg-gray-200 dark:hover:bg-gray-600
 `;
 
 const Certifications = () => {
@@ -44,7 +44,7 @@ const Certifications = () => {
                             <ListItem key={c.id} hasBorder={index === (certifications.length - 1) ? false : true}>
                                 <div className='flex'>
                                     <div>
-                                        {c.business === 'Udemy' && <SiUdemy size={48} />}
+                                        {c.business === 'Udemy' && <SiUdemy size={48} className='dark:text-white'/>}
                                     </div>
                                     <div className='ml-3'>
                                         <div>

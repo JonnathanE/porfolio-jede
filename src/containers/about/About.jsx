@@ -11,7 +11,7 @@ const AboutSection = tw.section`
     flex-col
     items-center
     bg-bookmark-white
-    dark:bg-bookmark-black
+    dark:bg-gray-800
 `;
 
 const AboutCard = tw.div`
@@ -24,7 +24,7 @@ const AboutCard = tw.div`
     shadow-xl
     rounded-md
     p-5
-    dark:bg-bookmark-grey
+    dark:bg-gray-700
 `;
 
 const AboutCardBody = tw.div`
@@ -42,15 +42,15 @@ const AboutCardTitle = tw.p`
     text-base
     sm:text-xl
     text-bookmark-blue
-    dark:text-bookmark-white
+    dark:text-white
 `;
 
 const AboutCardDesc = tw.p`
     text-base
     sm:text-xl
     text-center
-    text-gray-600
-    dark:text-bookmark-white
+    text-gray-800
+    dark:text-white
     leading-relaxed
     mt-4
 `;
@@ -71,32 +71,32 @@ const About = () => {
                 <TitleSection>About Me</TitleSection>
                 <AboutCard>
                     <AboutCardBody>
-                        <AboutCardTitle>Hey 👋</AboutCardTitle>
+                        <AboutCardTitle>Hello World 👋</AboutCardTitle>
                         <AboutCardDesc>
-                            I'm a passionate web developer, with knowledge of MERN stacks. I love freelancing and working on open source projects. I also love coffe.
+                            I'm a passionate web developer, with knowledge of MERN stacks. I love freelancing and working on open source projects. I also love coffe ☕.
                         </AboutCardDesc>
                     </AboutCardBody>
                     <AboutButtonContainer>
                         <a href={CV} download className='btn btn-purple hover:bg-bookmark-white hover:text-black'>Download CV</a>
                     </AboutButtonContainer>
                     <AboutCardFooter>
-                        <a href='https://github.com/JonnathanE' target="blank" className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300'>
+                        <a href='https://github.com/JonnathanE' target="blank" className='github-icon'>
                             <FaGithub />
                             <span className='sr-only'>Github</span>
                         </a>
-                        {/* <a href='https://www.youtube.com/' target="blank" className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-red-600 hover:bg-red-600 rounded-full hover:text-white transition-colors duration-300'>
+                        {/* <a href='https://www.youtube.com/' target="blank" className='youtube-icon'>
                         <FaYoutube />
                         <span className='sr-only'>Github</span>
                     </a> */}
-                        <a href='https://twitter.com/JonnathanE1' target="blank" className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300'>
+                        <a href='https://twitter.com/JonnathanE1' target="blank" className='twitter-icon'>
                             <FaTwitter />
                             <span className='sr-only'>Twitter</span>
                         </a>
-                        <a href='https://www.linkedin.com/in/jonnathan-espinoza-604a41226/' target="blank" className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-600 hover:bg-blue-600 rounded-full hover:text-white transition-colors duration-300'>
+                        <a href='https://www.linkedin.com/in/jonnathan-espinoza-604a41226/' target="blank" className='linkedin-icon'>
                             <FaLinkedin />
                             <span className='sr-only'>Linkedin</span>
                         </a>
-                        {/* <a href='https://www.youtube.com/' target="blank" className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-green-900 rounded-full hover:text-white transition-colors duration-300'>
+                        {/* <a href='https://www.youtube.com/' target="blank" className='email-icon'>
                         <FaEnvelope />
                         <span className='sr-only'>Email</span>
                     </a> */}

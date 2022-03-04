@@ -14,7 +14,7 @@ const PorfolioSection = tw.section`
     flex-col
     items-center
     bg-bookmark-white
-    dark:bg-bookmark-black
+    dark:bg-gray-800
 `;
 
 const List = tw.ul`
@@ -38,6 +38,7 @@ const PortfolioWrapper = tw.div`
 
 const PortfolioItem = tw.div`
     bg-white
+    dark:bg-gray-700
     //max-w-sm
     w-80
     rounded-md
@@ -58,7 +59,8 @@ const PortfolioInfo = tw.div`
 `;
 
 const PortfolioTitle = tw.p`
-text-bookmark-blue
+    text-bookmark-blue
+    dark:text-white
     text-center
     font-bold
     text-lg
@@ -145,22 +147,22 @@ const Portfolio = () => {
                                 <PortfolioTitle>{d.title}</PortfolioTitle>
                                 <div className='flex justify-center'>
 
-                                    {d.web && <a href={d.web} target="blank" className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300'>
+                                    {d.web && <a href={d.web} target="blank" className='preview-icon'>
                                         <FaGlobe />
                                         <span className='sr-only'>Preview</span>
                                     </a>}
 
-                                    {d.github && <a href={d.github} target="blank" className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300'>
+                                    {d.github && <a href={d.github} target="blank" className='github-icon'>
                                         <FaGithub />
                                         <span className='sr-only'>Github</span>
                                     </a>}
 
-                                    {d.gitlab && <a href={d.gitlab} target="blank" className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-orange-500 hover:bg-orange-500 rounded-full hover:text-white transition-colors duration-300'>
+                                    {d.gitlab && <a href={d.gitlab} target="blank" className='gitlab-icon'>
                                         <FaGitlab />
                                         <span className='sr-only'>Gitlab</span>
                                     </a>}
 
-                                    {d.youtube && <a href='https://www.youtube.com/' target="blank" className='text-xl m-1 p-1 sm:m-2 sm:p-2 text-red-600 hover:bg-red-600 rounded-full hover:text-white transition-colors duration-300'>
+                                    {d.youtube && <a href='https://www.youtube.com/' target="blank" className='youtube-icon'>
                                         <FaYoutube />
                                         <span className='sr-only'>Youtube</span>
                                     </a>}

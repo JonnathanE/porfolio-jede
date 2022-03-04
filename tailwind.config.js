@@ -13,7 +13,17 @@ module.exports = {
         "bookmark-white": "#f7f7f7",
         "bookmark-orange": "#FD7014",
         "bookmark-black": "#222831",
-        "bookmark-gray": "#EEEEEE"
+        "bookmark-gray": "#EEEEEE",
+        gray: {
+          900: '#202225',
+          800: '#2f3136',
+          700: '#36393f',
+          600: '#4f545c',
+          400: '#d4d7dc',
+          300: '#e3e5e8',
+          200: '#ebedef',
+          100: '#f2f3f5',
+        }
       },
     },
     fontFamily: {

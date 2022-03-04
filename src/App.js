@@ -11,7 +11,7 @@ import useDarkMode from "./hook/useDarkMode";
 
 const AppSections = tw.div`
 bg-bookmark-white
-dark:bg-bookmark-black
+dark:bg-gray-800
 `;
 
 function App() {

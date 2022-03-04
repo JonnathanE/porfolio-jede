@@ -25,6 +25,34 @@
   @apply bg-bookmark-white;
 }
 
+.github-icon {
+  @apply text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 dark:text-gray-50 hover:bg-gray-800 dark:hover:bg-gray-900 rounded-full hover:text-white transition-colors duration-300
+}
+
+.gitlab-icon {
+  @apply text-xl m-1 p-1 sm:m-2 sm:p-2 text-orange-500 hover:bg-orange-500 rounded-full hover:text-white transition-colors duration-300
+}
+
+.preview-icon {
+  @apply text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300
+}
+
+.youtube-icon {
+  @apply text-xl m-1 p-1 sm:m-2 sm:p-2 text-red-600 hover:bg-red-600 rounded-full hover:text-white transition-colors duration-300
+}
+
+.twitter-icon {
+  @apply text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-500 hover:bg-blue-500 rounded-full hover:text-white transition-colors duration-300
+}
+
+.linkedin-icon {
+  @apply text-xl m-1 p-1 sm:m-2 sm:p-2 text-blue-600 hover:bg-blue-600 rounded-full hover:text-white transition-colors duration-300
+}
+
+.email-icon {
+  @apply text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-green-900 rounded-full hover:text-white transition-colors duration-300
+}
+
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

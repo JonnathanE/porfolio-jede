@@ -24,7 +24,7 @@ const IntroSection = tw.section`
     items-center
     overflow-hidden
     bg-bookmark-white
-    dark:bg-bookmark-black
+    dark:bg-gray-800
 `;
 
 const IntroLeft = tw.div`
@@ -68,7 +68,7 @@ const IntroHello = tw.h2`
     text-3xl
     lg:text-4xl
     text-bookmark-blue
-    dark:text-bookmark-white
+    dark:text-white
 `;
 
 const IntroName = tw.h1`
@@ -76,7 +76,7 @@ const IntroName = tw.h1`
     text-4xl
     lg:text-6xl
     text-bookmark-blue
-    dark:text-bookmark-white
+    dark:text-white
 `;
 
 const IntroJob = tw.h3`
@@ -104,7 +104,7 @@ const TopLink = styled.div`
         left-[40%]
         lg:left-[70%]
         text-bookmark-purple
-        dark:text-bookmark-white
+        dark:text-white
         cursor-pointer
     `}
 `;

@@ -10,7 +10,7 @@ const ContactSection = tw.section`
     flex-col
     items-center
     bg-bookmark-white
-    dark:bg-bookmark-black
+    dark:bg-gray-800
 `;
 
 const ContactWrap = tw.div`
@@ -30,6 +30,7 @@ h-32
 sm:w-40
 sm:h-40
 bg-bookmark-purple
+dark:bg-gray-700
 text-white
 rounded-lg
 shadow-lg
@@ -49,6 +50,7 @@ h-32
 sm:w-40
 sm:h-40
 bg-bookmark-purple
+dark:bg-gray-700
 text-white
 rounded-lg
 shadow-lg

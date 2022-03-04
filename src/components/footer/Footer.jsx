@@ -4,7 +4,7 @@ const FooterSection = tw.div`
     top-20
     relative
     bg-bookmark-white
-    dark:bg-bookmark-black
+    dark:bg-gray-800
     flex
     justify-center
 `;
@@ -12,7 +12,7 @@ const FooterSection = tw.div`
 const FooterDesc = tw.p`
     my-4
     text-bookmark-blue
-    dark:text-bookmark-white
+    dark:text-white
 `;
 
 const Footer = () => {

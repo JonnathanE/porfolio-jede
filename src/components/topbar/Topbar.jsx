@@ -23,14 +23,14 @@ const TobarNav = tw.nav`
     self-center
     justify-between
     bg-bookmark-white
-    dark:bg-bookmark-black
+    dark:bg-gray-800
 `;
 
 const Logo = tw.div`
     text-3xl
     font-weight[700]
     text-bookmark-blue
-    dark:text-bookmark-white
+    dark:text-white
     dark:hover:text-bookmark-purple
     cursor-pointer
     flex
