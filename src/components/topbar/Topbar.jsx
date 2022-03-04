@@ -59,7 +59,7 @@ const NavItem = tw.li`
     min-h-full
     font-bold
     text-2xl
-    sm:text-sm
+    sm:text-base
     text-white
     sm:text-bookmark-blue
     sm:dark:text-white
@@ -74,6 +74,11 @@ const NavItem = tw.li`
     sm:mr-8
 `;
 
+const NavLink = tw(Link)`
+    sm:hover:border-b-2
+    sm:hover:border-bookmark-purple
+`;
+
 const Topbar = () => {
 
     const isMobile = useMediaQuery({ maxWidth: deviceSice.mobile });
@@ -82,32 +87,32 @@ const Topbar = () => {
     const navItems = (
         <NavItems>
             <NavItem onClick={() => scroll.scrollToTop()}>
-                Home
+                <p className='sm:hover:border-b-2 sm:hover:border-bookmark-purple'>Home</p>
             </NavItem>
             <NavItem>
-                <Link to='about' smooth={true} duration={1000}>
+                <NavLink to='about' smooth={true} duration={1000}>
                     About
-                </Link>
+                </NavLink>
             </NavItem>
             <NavItem>
-                <Link to='skill' smooth={true} duration={1000}>
+                <NavLink to='skill' smooth={true} duration={1000}>
                     Skill
-                </Link>
+                </NavLink>
             </NavItem>
             <NavItem>
-                <Link to='portfolio' smooth={true} duration={1000}>
+                <NavLink to='portfolio' smooth={true} duration={1000}>
                     Portfolio
-                </Link>
+                </NavLink>
             </NavItem>
             <NavItem>
-                <Link to='certification' smooth={true} duration={1000}>
+                <NavLink to='certification' smooth={true} duration={1000}>
                     Certification
-                </Link>
+                </NavLink>
             </NavItem>
             <NavItem>
-                <Link to='contact' smooth={true} duration={1000}>
+                <NavLink to='contact' smooth={true} duration={1000}>
                     Contact
-                </Link>
+                </NavLink>
             </NavItem>
             <NavItem onClick={() => setTheme(colorTheme)}>
                 {colorTheme === 'light'
@@ -120,7 +125,7 @@ const Topbar = () => {
 
     return (
         <TobarNav>
-            <Logo onClick={() => scroll.scrollToTop()}><LogoImg src={LogoJEDE} alt='logo jonnathan'/> JEDE</Logo>
+            <Logo onClick={() => scroll.scrollToTop()}><LogoImg src={LogoJEDE} alt='logo jonnathan' /> JEDE</Logo>
 
             {
                 isMobile && <Menu right styles={styles} burgerButtonClassName='dark:bg-white'>

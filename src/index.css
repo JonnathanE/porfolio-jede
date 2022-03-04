@@ -13,6 +13,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* 
+The .active class is used for the Link component of React-scroll:
+<Link activeClass="active" spy={true}> </Link>
+!: When activated it is only activated when the component is visible. therefore you must put a min-h
+*/
+.active {
+  @apply bg-white text-red-600
+}
+
 .btn {
   @apply shadow-md py-3 px-6 rounded-md transition duration-300;
 }

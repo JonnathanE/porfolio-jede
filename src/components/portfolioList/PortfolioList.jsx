@@ -15,6 +15,8 @@ const Item = styled.li`
         rounded-lg
         cursor-pointer
         relative
+        hover:bg-bookmark-purple
+        hover:text-white
     `}
     ${props => (props.isActive && tw`bg-bookmark-purple text-white`)}
 `;

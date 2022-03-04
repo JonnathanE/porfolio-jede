@@ -16,6 +16,7 @@ const AboutSection = tw.section`
 
 const AboutCard = tw.div`
     w-4/5
+    sm:w-7/12
     h-4/6
     bg-white
     flex
@@ -25,6 +26,7 @@ const AboutCard = tw.div`
     rounded-md
     p-5
     dark:bg-gray-700
+    sm:mt-4
 `;
 
 const AboutCardBody = tw.div`
