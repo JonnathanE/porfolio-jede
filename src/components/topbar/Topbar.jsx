@@ -6,6 +6,7 @@ import { deviceSice } from '../../responsive';
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import styles from './menuStyles';
 import useDarkMode from '../../hook/useDarkMode';
+import LogoJEDE from '../../img/logo-jede.png';
 
 const TobarNav = tw.nav`
     w-full
@@ -32,6 +33,12 @@ const Logo = tw.div`
     dark:text-bookmark-white
     dark:hover:text-bookmark-purple
     cursor-pointer
+    flex
+    items-center
+`;
+
+const LogoImg = tw.img`
+w-10 mr-2
 `;
 
 const NavItems = tw.ul`
@@ -113,7 +120,7 @@ const Topbar = () => {
 
     return (
         <TobarNav>
-            <Logo onClick={() => scroll.scrollToTop()}>JEDE</Logo>
+            <Logo onClick={() => scroll.scrollToTop()}><LogoImg src={LogoJEDE} alt='logo jonnathan'/> JEDE</Logo>
 
             {
                 isMobile && <Menu right styles={styles} burgerButtonClassName='dark:bg-white'>
