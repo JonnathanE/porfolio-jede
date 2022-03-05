@@ -32,13 +32,12 @@ const PortfolioWrapper = tw.div`
     sm:pr-6
     flex
     flex-wrap
-    items-center
     justify-center
 `
 
 const PortfolioItem = tw.div`
     bg-white
-    dark:bg-gray-700
+    dark:bg-gray-600
     //max-w-sm
     w-80
     rounded-md

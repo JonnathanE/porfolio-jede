@@ -10,7 +10,8 @@ export default {
     },
     // Color/shape of burger icon bars
     bmBurgerBars: {
-        background: "#373a47",
+        // background: "#373a47",
+        background: "#fff"
     },
     // Color/shape of burger icon bars on hover
     bmBurgerBarsHover: {

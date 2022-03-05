@@ -1,6 +1,10 @@
 import tw from 'twin.macro';
 import TitleSection from '../../atom/titleSection/TitleSection';
-import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from 'react-icons/fa'
+import Lottie from 'react-lottie';
+import * as animationTwitter from '../../animate/38764-twitter-logo-effect.json';
+import * as animationLinkedin from '../../animate/49413-linkedin-icon.json';
+import * as animationGitHub from '../../animate/81333-github.json';
+import * as animationEmail from '../../animate/18781-email-sent-by-todd-rocheford.json';
 
 const ContactSection = tw.section`
     top-20
@@ -29,8 +33,8 @@ w-32
 h-32
 sm:w-40
 sm:h-40
-bg-bookmark-purple
-dark:bg-gray-700
+bg-white
+dark:bg-gray-600
 text-white
 rounded-lg
 shadow-lg
@@ -42,6 +46,10 @@ items-center
 
 const ContactImg = tw.img`
 w-11/12
+bg-gray-500
+px-2
+py-1
+rounded-full
 `;
 
 const ContactLink = tw.a`
@@ -49,9 +57,10 @@ w-32
 h-32
 sm:w-40
 sm:h-40
-bg-bookmark-purple
-dark:bg-gray-700
-text-white
+bg-white
+dark:bg-gray-600
+text-bookmark-blue
+dark:text-white
 rounded-lg
 shadow-lg
 flex
@@ -61,21 +70,54 @@ items-center
 `;
 
 const Contact = () => {
+
+    const defaultOptionsAnimate = animateData => {
+        return {
+            loop: true,
+            autoplay: true,
+            animationData: animateData,
+            rendererSettings: {
+                preserveAspectRatio: 'xMidYMid slice'
+            }
+        }
+    };
+
     return (
         <div id="contact">
             <ContactSection>
                 <TitleSection>Contact</TitleSection>
                 <ContactWrap>
                     <ContactCard>
-                        <FaEnvelope className='w-1/2 h-1/2 mb-3'/>
+                    <Lottie options={defaultOptionsAnimate(animationEmail)}
+                            height={100}
+                            width={100}
+                        />
                         <ContactImg src='assets/email.png' />
                     </ContactCard>
 
-                    <ContactLink href="https://www.linkedin.com/in/jonnathan-espinoza-604a41226" target="blank" rel="noopener noreferrer"><FaLinkedin className='w-1/2 h-1/2 mb-3'/> Contact Me</ContactLink>
+                    <ContactLink href="https://www.linkedin.com/in/jonnathan-espinoza-604a41226" target="blank" rel="noopener noreferrer">
+                        <Lottie options={defaultOptionsAnimate(animationLinkedin)}
+                            height={100}
+                            width={100}
+                        />
+                        Contact Me
+                    </ContactLink>
 
-                    <ContactLink href="https://github.com/JonnathanE" target="blank" rel="noopener noreferrer"><FaGithub className='w-1/2 h-1/2 mb-3'/> Follow Me</ContactLink>
+                    <ContactLink href="https://github.com/JonnathanE" target="blank" rel="noopener noreferrer">
+                        <Lottie options={defaultOptionsAnimate(animationGitHub)}
+                            height={100}
+                            width={100}
+                        />
+                        Follow Me
+                    </ContactLink>
 
-                    <ContactLink href="https://twitter.com/JonnathanE1" target="blank" rel="noopener noreferrer"><FaTwitter className='w-1/2 h-1/2 mb-3'/> Follow Me</ContactLink>
+                    <ContactLink href="https://twitter.com/JonnathanE1" target="blank" rel="noopener noreferrer">
+                        <Lottie options={defaultOptionsAnimate(animationTwitter)}
+                            height={100}
+                            width={100}
+                        />
+                        Follow Me
+                    </ContactLink>
 
                 </ContactWrap>
             </ContactSection>

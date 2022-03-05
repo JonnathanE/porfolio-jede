@@ -3,16 +3,14 @@ import tw from 'twin.macro';
 const FooterSection = tw.div`
     top-20
     relative
-    bg-bookmark-white
-    dark:bg-gray-800
+    bg-gray-900
     flex
     justify-center
 `;
 
 const FooterDesc = tw.p`
     my-4
-    text-bookmark-blue
-    dark:text-white
+    text-white
 `;
 
 const Footer = () => {

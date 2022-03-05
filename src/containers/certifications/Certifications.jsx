@@ -13,7 +13,7 @@ sm:pl-6 sm:pr-6 mt-6
 `;
 
 const List = tw.ul`
-bg-white dark:bg-gray-800 rounded-lg shadow-md p-6
+bg-white dark:bg-gray-600 rounded-lg shadow-md p-6
 `;
 
 const ListItem = styled.li`
@@ -26,11 +26,11 @@ font-semibold text-base text-bookmark-blue dark:text-white
 `;
 
 const SubTitle = tw.span`
-text-gray-700 dark:text-gray-400 text-sm
+text-gray-700 dark:text-gray-300 text-sm
 `;
 
 const BtnLink = tw.a`
-py-2 px-4 rounded-full transition duration-300 border-2 border-gray-600 dark:border-gray-400 text-gray-600 dark:text-gray-400 font-semibold hover:bg-gray-200 dark:hover:bg-gray-600
+py-2 px-4 rounded-full transition duration-300 border-2 border-gray-600 dark:border-gray-300 text-gray-600 dark:text-gray-300 font-semibold hover:bg-gray-200 dark:hover:bg-gray-700
 `;
 
 const Certifications = () => {

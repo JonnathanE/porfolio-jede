@@ -11,6 +11,7 @@ import LogoJEDE from '../../img/logo-jede.png';
 const TobarNav = tw.nav`
     w-full
     h-20
+    sm:h-16
     top-0
     fixed
     z-50
@@ -22,23 +23,20 @@ const TobarNav = tw.nav`
     items-center
     self-center
     justify-between
-    bg-bookmark-white
-    dark:bg-gray-800
+    bg-gray-900
 `;
 
 const Logo = tw.div`
     text-3xl
     font-weight[700]
-    text-bookmark-blue
-    dark:text-white
-    dark:hover:text-bookmark-purple
+    text-white
     cursor-pointer
     flex
     items-center
 `;
 
 const LogoImg = tw.img`
-w-10 mr-2
+w-10 mr-2 bg-white rounded-full p-1
 `;
 
 const NavItems = tw.ul`
@@ -61,8 +59,6 @@ const NavItem = tw.li`
     text-2xl
     sm:text-base
     text-white
-    sm:text-bookmark-blue
-    sm:dark:text-white
     cursor-pointer
     transition-colors
     transition-duration[300ms]
@@ -128,7 +124,7 @@ const Topbar = () => {
             <Logo onClick={() => scroll.scrollToTop()}><LogoImg src={LogoJEDE} alt='logo jonnathan' /> JEDE</Logo>
 
             {
-                isMobile && <Menu right styles={styles} burgerButtonClassName='dark:bg-white'>
+                isMobile && <Menu right styles={styles} burgerButtonClassName=''>
                     {navItems}
                 </Menu>
             }

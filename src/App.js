@@ -7,7 +7,6 @@ import Contact from './containers/contact/Contact';
 import Intro from "./containers/intro/Intro";
 import Portfolio from './containers/portfolio/Portfolio';
 import Skill from './containers/skill/Skill';
-import useDarkMode from "./hook/useDarkMode";
 
 const AppSections = tw.div`
 bg-bookmark-white
@@ -15,7 +14,6 @@ dark:bg-gray-800
 `;
 
 function App() {
-  useDarkMode();
   return (
     <div className='w-full h-full'>
       <Topbar />

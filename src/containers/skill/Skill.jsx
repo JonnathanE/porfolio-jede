@@ -30,15 +30,17 @@ const SkillCard = tw.div`
     rounded-md
     overflow-hidden
     bg-white
-    dark:bg-gray-700
+    dark:bg-gray-600
     text-bookmark-blue
     dark:text-white
     shadow-lg
-    sm:shadow-xl
+    sm:shadow-lg
     flex
     flex-col
     items-center
     justify-center
+    border
+    border-gray-500
 `;
 
 const SkillCardIcon = tw.img`

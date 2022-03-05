@@ -4,21 +4,21 @@ import styled from 'styled-components'
 const Item = styled.li`
     ${tw`
         text-base
-        text-bookmark-blue
-        dark:text-white
+        text-white
+        hover:text-black
+        bg-bookmark-purple
+        hover:bg-gray-200
         mr-5
         mb-2
         sm:mr-12
         p-1.5
-        border-2
-        border-bookmark-purple
         rounded-lg
         cursor-pointer
         relative
-        hover:bg-bookmark-purple
-        hover:text-white
+        shadow-md
+        transition duration-300
     `}
-    ${props => (props.isActive && tw`bg-bookmark-purple text-white`)}
+    ${props => (props.isActive && tw`bg-gray-500 `)}
 `;
 
 const PortfolioList = ({ id, title, active, setSelected, total }) => {

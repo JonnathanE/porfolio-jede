@@ -2,6 +2,8 @@ import tw from 'twin.macro';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import CV from '../../docs/cv.pdf';
 import TitleSection from '../../atom/titleSection/TitleSection';
+import Lottie from 'react-lottie';
+import * as animationData from '../../animate/91598-hi-hand.json';
 
 const AboutSection = tw.section`
     top-20
@@ -25,7 +27,7 @@ const AboutCard = tw.div`
     shadow-xl
     rounded-md
     p-5
-    dark:bg-gray-700
+    dark:bg-gray-600
     sm:mt-4
 `;
 
@@ -67,13 +69,29 @@ const AboutCardFooter = tw.div`
 `;
 
 const About = () => {
+
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice'
+        }
+    };
+
     return (
         <div id='about'>
             <AboutSection >
                 <TitleSection>About Me</TitleSection>
                 <AboutCard>
                     <AboutCardBody>
-                        <AboutCardTitle>Hello World 👋</AboutCardTitle>
+                        <AboutCardTitle>
+                            Hello World
+                            <Lottie options={defaultOptions}
+                                height={40}
+                                width={40}
+                            />
+                        </AboutCardTitle>
                         <AboutCardDesc>
                             I'm a passionate web developer, with knowledge of MERN stacks. I love freelancing and working on open source projects. I also love coffe ☕.
                         </AboutCardDesc>
