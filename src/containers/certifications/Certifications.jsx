@@ -1,6 +1,7 @@
 import TitleSection from '../../atom/titleSection/TitleSection';
 import { SiUdemy } from 'react-icons/si';
-import tw, { styled } from 'twin.macro'
+import tw, { styled } from 'twin.macro';
+import Edteam from '../../img/edeteam-icon.png';
 
 import { certifications } from '../../data';
 
@@ -33,6 +34,11 @@ const BtnLink = tw.a`
 py-2 px-4 rounded-full transition duration-300 border-2 border-gray-600 dark:border-gray-300 text-gray-600 dark:text-gray-300 font-semibold hover:bg-gray-200 dark:hover:bg-gray-700
 `;
 
+const Icon = tw.img`
+    w-[48px]
+    h-[48px]
+`;
+
 const Certifications = () => {
     return (
         <div id='certification'>
@@ -45,6 +51,7 @@ const Certifications = () => {
                                 <div className='flex'>
                                     <div>
                                         {c.business === 'Udemy' && <SiUdemy size={48} className='dark:text-white'/>}
+                                        {c.business === 'EDteam' && <Icon src={Edteam}/>}
                                     </div>
                                     <div className='ml-3'>
                                         <div>

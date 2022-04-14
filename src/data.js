@@ -1,52 +1,52 @@
 //https://64.media.tumblr.com/28c393f21f2826789012e61483ceed3c/bd76719e521093c8-a6/s500x750/e442edb3b6c0b7b899456ecf843b2422ae129dc2.png
 export const skills = [
     {
-        id: 1,
+        id: 1000,
         img: 'assets/icons8-reaccionar.svg',
         name: 'React'
     },
     {
-        id: 2,
+        id: 1001,
         img: 'assets/icons8-nodejs.svg',
         name: 'Node js'
     },
     {
-        id: 3,
+        id: 1002,
         img: 'assets/icons8-javascript.svg',
         name: 'JavaScript'
     },
     {
-        id: 4,
+        id: 1003,
         img: 'assets/icons8-html-5.svg',
         name: 'HTML'
     },
     {
-        id: 5,
+        id: 1004,
         img: 'assets/icons8-css3.svg',
         name: 'CSS'
     },
     {
-        id: 6,
+        id: 1005,
         img: 'assets/Tailwind_CSS_Logo.png',
         name: 'Tailwind CSS',
     },
     {
-        id: 7,
+        id: 1006,
         img: 'assets/icons8-bootstrap.svg',
         name: 'Bootstrap',
     },
     {
-        id: 8,
+        id: 1007,
         img: 'assets/icons8-mongodb.svg',
         name: 'MongoDB'
     },
     {
-        id: 9,
+        id: 1008,
         img: 'assets/icons8-logo-de-mysql.svg',
         name: 'MySQL'
     },
     {
-        id: 10,
+        id: 1009,
         img: 'assets/icons8-git.svg',
         name: 'Git',
     }
@@ -54,7 +54,16 @@ export const skills = [
 
 export const certifications = [
     {
-        id: 3,
+        id: 2003,
+        name: "React desde cero (2021)",
+        business: "EDteam",
+        expedition: 'mar. 2022',
+        expiration: null,
+        idCertification: '3885771130-f37dff7a-4584-4687-9a13-4f0db4a82824',
+        url: 'https://ed.team/@jonnathandamianespinozaerraez/curso/reactjs',
+    },
+    {
+        id: 2002,
         name: "[2021] Scrum Master Certificación",
         business: "Udemy",
         expedition: 'dic. 2021',
@@ -63,7 +72,7 @@ export const certifications = [
         url: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-ba9da92b-d143-4fc4-ae65-df7ce3587a42.pdf',
     },
     {
-        id: 2,
+        id: 2001,
         name: 'Universidad CSS 2021 - Aprende CSS desde Cero hasta Experto!',
         business: "Udemy",
         expedition: 'dic. 2021',
@@ -72,7 +81,7 @@ export const certifications = [
         url: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-f5512190-afed-4310-a6f0-7e14d48f12d7.pdf',
     },
     {
-        id: 1,
+        id: 2000,
         name: 'HTML 5 desde cero Edición 2020',
         business: "Udemy",
         expedition: 'abr. 2021',
@@ -84,7 +93,7 @@ export const certifications = [
 
 export const portfolio = [
     {
-        id: 1000,
+        id: 3000,
         title: 'Teach LSEC App',
         category: 'webapp',
         img: 'assets/portfolio/LSEC_App.png',
@@ -92,29 +101,29 @@ export const portfolio = [
         github: 'https://github.com/JonnathanE/microlearning-LSEC',
         technology: [
             {
-                id: 101,
+                id: 3001,
                 name: 'React',
                 icon: 'assets/icons8-reaccionar.svg'
             },
             {
-                id: 102,
+                id: 3002,
                 name: 'Node.js',
                 icon: 'assets/icons8-nodejs.svg'
             },
             {
-                id: 103,
+                id: 3003,
                 name: 'Mongodb',
                 icon: 'assets/icons8-mongodb.svg'
             },
             {
-                id: 104,
+                id: 3004,
                 name: 'Bootstrap',
                 icon: 'assets/icons8-oreja.svg'
             }
         ]
     },
     {
-        id: 1001,
+        id: 3100,
         title: 'Rick and Morty Wiki',
         category: 'webapp',
         img: 'https://user-images.githubusercontent.com/33469147/156499048-d1642bde-6fc3-418f-81b0-84a2a411d15b.png',
@@ -122,53 +131,53 @@ export const portfolio = [
         github: 'https://github.com/JonnathanE/rick-morty-wiki',
         technology: [
             {
-                id: 701,
+                id: 3101,
                 name: 'React',
                 icon: 'assets/icons8-reaccionar.svg'
             },
             {
-                id: 702,
+                id: 3102,
                 name: 'Tailwind',
                 icon: 'assets/icons8-nodejs.svg'
             }
         ]
     },
     {
-        id: 1002,
+        id: 3200,
         title: 'E-commerce web Design',
         category: 'webapp',
         img: 'assets/portfolio/ecommerce.png',
         github: 'https://github.com/JonnathanE/ecommerce-shopping',
         technology: [
             {
-                id: 201,
+                id: 3201,
                 name: 'React',
                 icon: 'assets/icons8-reaccionar.svg'
             },
             {
-                id: 202,
+                id: 3202,
                 name: 'Node.js',
                 icon: 'assets/icons8-nodejs.svg'
             },
             {
-                id: 203,
+                id: 3203,
                 name: 'Mongodb',
                 icon: 'assets/icons8-mongodb.svg'
             },
             {
-                id: 204,
+                id: 3204,
                 name: 'Styled Component',
                 icon: 'assets/icons8-css3.svg'
             },
             {
-                id: 205,
+                id: 3205,
                 name: 'CSS',
                 icon: 'assets/icons8-css3.svg'
             }
         ]
     },
     {
-        id: 2000,
+        id: 3300,
         title: 'Bookmark web Design',
         category: 'webdesign',
         web: 'https://jonnathane.github.io/bookmark-manager-web-page/',
@@ -176,19 +185,19 @@ export const portfolio = [
         github: 'https://github.com/JonnathanE/bookmark-manager-web-page',
         technology: [
             {
-                id: 301,
+                id: 3301,
                 name: 'React',
                 icon: 'assets/icons8-reaccionar.svg'
             },
             {
-                id: 305,
+                id: 3302,
                 name: 'Tailwind',
                 icon: 'assets/icons8-css3.svg'
             }
         ]
     },
     {
-        id: 2001,
+        id: 3400,
         title: 'Admin Dashboard Design',
         category: 'webdesign',
         web: 'https://jonnathane.github.io/admin-dashboard-react/',
@@ -196,19 +205,19 @@ export const portfolio = [
         github: 'https://github.com/JonnathanE/admin-dashboard-react',
         technology: [
             {
-                id: 401,
+                id: 3401,
                 name: 'React',
                 icon: 'assets/icons8-reaccionar.svg'
             },
             {
-                id: 405,
+                id: 3402,
                 name: 'CSS',
                 icon: 'assets/icons8-css3.svg'
             }
         ]
     },
     {
-        id: 2002,
+        id: 3500,
         title: 'Travel Agency Design',
         category: 'webdesign',
         web: 'https://jonnathane.github.io/travel-agency-website/',
@@ -216,24 +225,24 @@ export const portfolio = [
         github: 'https://github.com/JonnathanE/travel-agency-website',
         technology: [
             {
-                id: 501,
+                id: 3501,
                 name: 'React',
                 icon: 'assets/icons8-reaccionar.svg'
             },
             {
-                id: 505,
+                id: 3502,
                 name: 'Tailwind',
                 icon: 'assets/icons8-css3.svg'
             },
             {
-                id: 503,
+                id: 3503,
                 name: 'Styled Components',
                 icon: 'assets/icons8-css3.svg'
             }
         ]
     },
     {
-        id: 2003,
+        id: 3600,
         title: 'Discord Design',
         category: 'webdesign',
         web: '',
@@ -241,19 +250,19 @@ export const portfolio = [
         github: 'https://github.com/JonnathanE/discord-design',
         technology: [
             {
-                id: 601,
+                id: 3601,
                 name: 'React',
                 icon: 'assets/icons8-reaccionar.svg'
             },
             {
-                id: 602,
+                id: 3602,
                 name: 'Tailwind',
                 icon: 'assets/icons8-css3.svg'
             }
         ]
     },
     {
-        id: 2004,
+        id: 3700,
         title: 'Portfolio Design',
         category: 'webdesign',
         web: 'https://jede-portfolio.web.app/',
@@ -261,17 +270,17 @@ export const portfolio = [
         github: 'https://github.com/JonnathanE/porfolio-jede',
         technology: [
             {
-                id: 801,
+                id: 3701,
                 name: 'React',
                 icon: 'assets/icons8-reaccionar.svg'
             },
             {
-                id: 802,
+                id: 3702,
                 name: 'Tailwind',
                 icon: 'assets/icons8-css3.svg'
             },
             {
-                id: 803,
+                id: 3703,
                 name: 'Styled Components',
                 icon: 'assets/icons8-css3.svg'
             }

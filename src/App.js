@@ -15,7 +15,7 @@ dark:bg-gray-800
 
 function App() {
   return (
-    <div className='w-full h-full'>
+    <>
       <Topbar />
       <AppSections>
         <Intro />
@@ -26,7 +26,7 @@ function App() {
         <Contact />
       </AppSections>
       <Footer />
-    </div>
+    </>
   );
 }
 
