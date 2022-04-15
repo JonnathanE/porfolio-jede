@@ -4,8 +4,8 @@ import CV from '../../docs/cv-software.pdf';
 import TitleSection from '../../atom/titleSection/TitleSection';
 import Lottie from 'react-lottie';
 import * as animationData from '../../animate/91598-hi-hand.json';
-import { useMediaQuery } from 'react-responsive';
-import { deviceSice } from '../../responsive';
+//import { useMediaQuery } from 'react-responsive';
+//import { deviceSice } from '../../responsive';
 
 const AboutSection = tw.section`
     top-20
@@ -72,7 +72,7 @@ const AboutCardFooter = tw.div`
 
 const About = () => {
 
-    const isLaptop = useMediaQuery({ minWidth: deviceSice.laptop });
+    //const isLaptop = useMediaQuery({ minWidth: deviceSice.laptop });
 
     const defaultOptions = {
         loop: true,
@@ -101,15 +101,9 @@ const About = () => {
                         </AboutCardDesc>
                     </AboutCardBody>
                     <AboutButtonContainer>
-                        {isLaptop ?
-                            <a href='/viewcv' target={'blank'} className='btn btn-purple hover:bg-bookmark-white hover:text-black'>
-                                Download CV
-                            </a>
-                            :
-                            <a href={CV} download='CV-Jonnathan-Espinoza.pdf' className='btn btn-purple hover:bg-bookmark-white hover:text-black'>
-                                Download CV
-                            </a>
-                        }
+                        <a href={CV} download='CV-Jonnathan-Espinoza.pdf' className='btn btn-purple hover:bg-bookmark-white hover:text-black'>
+                            Download CV
+                        </a>
                     </AboutButtonContainer>
                     <AboutCardFooter>
                         <a href='https://github.com/JonnathanE' target="blank" className='github-icon'>
