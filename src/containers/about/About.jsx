@@ -1,9 +1,11 @@
 import tw from 'twin.macro';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import CV from '../../docs/cv.pdf';
+import CV from '../../docs/cv-software.pdf';
 import TitleSection from '../../atom/titleSection/TitleSection';
 import Lottie from 'react-lottie';
 import * as animationData from '../../animate/91598-hi-hand.json';
+import { useMediaQuery } from 'react-responsive';
+import { deviceSice } from '../../responsive';
 
 const AboutSection = tw.section`
     top-20
@@ -70,6 +72,8 @@ const AboutCardFooter = tw.div`
 
 const About = () => {
 
+    const isLaptop = useMediaQuery({ minWidth: deviceSice.laptop });
+
     const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -97,7 +101,15 @@ const About = () => {
                         </AboutCardDesc>
                     </AboutCardBody>
                     <AboutButtonContainer>
-                        <a href={CV} download className='btn btn-purple hover:bg-bookmark-white hover:text-black'>Download CV</a>
+                        {isLaptop ?
+                            <a href='/viewcv' target={'blank'} className='btn btn-purple hover:bg-bookmark-white hover:text-black'>
+                                Download CV
+                            </a>
+                            :
+                            <a href={CV} download='CV-Jonnathan-Espinoza.pdf' className='btn btn-purple hover:bg-bookmark-white hover:text-black'>
+                                Download CV
+                            </a>
+                        }
                     </AboutButtonContainer>
                     <AboutCardFooter>
                         <a href='https://github.com/JonnathanE' target="blank" className='github-icon'>

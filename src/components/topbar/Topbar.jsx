@@ -3,22 +3,21 @@ import tw from 'twin.macro';
 import { slide as Menu } from 'react-burger-menu';
 import { useMediaQuery } from 'react-responsive';
 import { deviceSice } from '../../responsive';
-import { MdDarkMode, MdLightMode } from "react-icons/md";
 import styles from './menuStyles';
-import useDarkMode from '../../hook/useDarkMode';
 import LogoJEDE from '../../img/logo-jede.png';
+import ToggleDarkMode from '../toggleDarkMode/ToggleDarkMode';
 
 const TobarNav = tw.nav`
     w-full
     h-20
-    sm:h-16
+    lg:h-16
     top-0
     fixed
     z-50
     pl-6
     pr-6
     pt-4
-    md:pt-0
+    lg:pt-0
     flex
     items-center
     self-center
@@ -43,8 +42,8 @@ const NavItems = tw.ul`
     list-none
     w-full
     h-auto
-    sm:w-auto
-    sm:h-full
+    lg:w-auto
+    lg:h-full
     flex
     justify-center
     items-center
@@ -57,7 +56,7 @@ const NavItem = tw.li`
     min-h-full
     font-bold
     text-2xl
-    sm:text-base
+    md:text-base
     text-white
     cursor-pointer
     transition-colors
@@ -66,19 +65,18 @@ const NavItem = tw.li`
     dark:hover:text-bookmark-purple
     box-content
     mb-2
-    sm:mb-0
-    sm:mr-8
+    md:mb-0
+    md:mr-7
 `;
 
 const NavLink = tw(Link)`
-    sm:hover:border-b-2
-    sm:hover:border-bookmark-purple
+    lg:hover:border-b-2
+    lg:hover:border-bookmark-purple
 `;
 
 const Topbar = () => {
 
-    const isMobile = useMediaQuery({ maxWidth: deviceSice.mobile });
-    const [colorTheme, setTheme] = useDarkMode();
+    const isMobile = useMediaQuery({ maxWidth: deviceSice.tablet });
 
     const navItems = (
         <NavItems>
@@ -110,12 +108,10 @@ const Topbar = () => {
                     Contact
                 </NavLink>
             </NavItem>
-            <NavItem onClick={() => setTheme(colorTheme)}>
-                {colorTheme === 'light'
-                    ? <MdLightMode className='text-2xl' />
-                    : <MdDarkMode className='text-2xl' />
-                }
+            <NavItem>
+                <ToggleDarkMode />
             </NavItem>
+
         </NavItems>
     )
 
