@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import tw from 'twin.macro';
 import Footer from './components/footer/Footer';
 import Topbar from "./components/topbar/Topbar";
@@ -16,6 +17,9 @@ dark:bg-gray-800
 function App() {
   return (
     <>
+      <Helmet>
+        <title>Portfolio - Jonnathan Espinoza</title>
+      </Helmet>
       <Topbar />
       <AppSections>
         <Intro />
